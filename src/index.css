@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.btn-primary{
+    background-color: #5F2EEA;
+    color: #fff;
+    width: 7rem;
+    height: 2rem;
+    border: 1px solid #5F2EEA;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    background-color: #fff;
+    color: #5F2EEA;
+    cursor: pointer;
+}
+
+.btn-danger{
+  background-color: #c72f2f;
+  color: #fff;
+  width: 7rem;
+  height: 2rem;
+  border: 1px solid #c72f2f;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-danger:hover{
+  background-color: #fff;
+  color: #c72f2f;
+  cursor: pointer;
+}
+
+

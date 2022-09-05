@@ -1,0 +1,218 @@
+.row-movie-details{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    column-gap: 2rem;
+}
+
+.row-movie-details .card-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem 0;
+    line-height: 1;
+}
+
+.row-movie-details .card-left .cover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-movie-details .card-left .cover img{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 332px;
+    height:458px;
+
+}
+
+.row-movie-details .card-right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+}
+
+.row-movie-details .card-right .header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.row-movie-details .card-right .header p{
+    font-size: 0.8rem;
+    color: #6E7191;
+}
+
+.row-movie-details .card-right .header .title p{
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.row-movie-details .card-right .info{
+    display: flex;
+    flex-direction: column;
+}
+
+.row-movie-details .card-right .info .top{
+    display: flex;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    justify-content:space-between;
+    width:70%
+}
+
+.row-movie-details .card-right .info .top .release-date{
+    display: flex;
+    flex-direction: column;
+}
+
+.row-movie-details .card-right .info .top .director{
+    /* margin: 0 0 0 7rem; */
+    display: flex;
+    flex-direction: column;
+    width:50%
+}
+
+.row-movie-details .card-right .info .top span{
+    color: #6E7191;
+    font-size: 0.8rem;
+}
+
+.row-movie-details .card-right .info .top p{
+    font-size: 0.9rem;
+}
+
+.row-movie-details .card-right .info .bot{
+    display: flex;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    justify-content:space-between;
+    width:70%
+    
+}
+
+.row-movie-details .card-right .info .bot .duration {
+    display: flex;
+    flex-direction: column;
+}
+
+.lengthDuration{
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.row-movie-details .card-right .info .bot .casts{
+    /* margin: 0 0 0 5rem; */
+    display: flex;
+    flex-direction: column;
+    width:50%
+}
+
+
+.row-movie-details .card-right .info .bot span{
+    color: #6E7191;
+    font-size: 0.8rem;
+}
+
+.row-movie-details .card-right .info .bot p{
+    font-size: 0.9rem;
+}
+
+
+.row-movie-details .card-right .synopsis{
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+.row-movie-details .card-right .synopsis h3{
+    font-size: 1rem;
+}
+
+.row-movie-details .card-right .synopsis p{
+    font-size: 0.9rem;
+    color: #6E7191;
+}
+
+@media only screen and  (max-width: 600px){
+    .row-movie-details{
+        display: flex;
+        flex-direction: column;
+        column-gap: none;
+    }
+
+    .row-movie-details .card-right{
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .row-movie-details .card-right .header{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+    }
+
+
+    .row-movie-details .card-right .header .title p{
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-bottom: -0.1rem;
+    }
+
+    .row-movie-details .card-right .header .genres p{
+        text-align: center;
+    }
+
+    .row-movie-details .card-right .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .row-movie-details .card-right .info .top, 
+    
+    .row-movie-details .card-right .info .bot{
+        width: 100%;
+    }
+    
+
+    .row-movie-details .card-left .cover img{
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        padding: 2rem;
+        border-radius: 10px;
+        width: 200px;
+        height:458px;
+    
+    }
+}
+
+@media only screen and  (max-width: 375px){
+    .row-movie-details{
+        display: flex;
+        flex-direction: column;
+        column-gap: none;
+    }
+
+    .row-movie-details .card-left .cover{
+        display: flex;
+        align-self: center;
+        width: 70%;
+        object-fit: cover;
+    }
+
+    .row-movie-details .card-left .cover img{
+        box-shadow: none;
+        width: 100%;
+        height: 350px;    
+        padding: none;
+        margin: 0;
+        object-fit: cover;
+    }
+}

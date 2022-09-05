@@ -1,0 +1,81 @@
+
+.row-jumbotron{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    font-family: 'Roboto', sans-serif;
+    column-gap: 10rem;
+}
+
+.card-left .tagline-home{
+    color: #A0A3BD;
+    font-size: 0.9rem;
+
+}
+
+.card-left .find{
+    color: #5F2EEA;
+    margin-top: -1rem;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.card-right-jumbotron{
+    display: flex;
+    column-gap: 1rem;
+}
+
+.card-right-jumbotron .images-one{
+    margin-top: 6rem;
+}
+
+.card-right-jumbotron .images-two{
+    margin-top: 4rem;
+}
+
+.card-right-jumbotron .images-three{
+    margin-top: 2rem;
+}
+
+@media only screen and  (max-width: 600px) {
+    .row-jumbotron{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;  
+        width: 100%;
+    }
+    .card-left{
+        margin-top: 5rem;
+    }
+
+    .card-right-jumbotron{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .card-right .images-one{
+        margin-top: 6rem;
+    }
+    
+    .card-right .images-two{
+        margin-top: 4rem;
+    }
+    
+    .card-right .images-three{
+        margin-top: 2rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+

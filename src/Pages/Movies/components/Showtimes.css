@@ -1,0 +1,481 @@
+.row-showtimes{
+    display: flex;
+    flex-direction: column;
+    background-color:  #F5F6F8;
+}
+
+.row-showtimes .header{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.row-showtimes .sub-header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+[type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}  
+
+.row-showtimes .sub-header .datepicker {
+    border: #eaedf8;
+    border-radius: 5px;
+    background-color: #eaedf8;
+    padding: 3px 5px;
+    width: 15rem;
+    height: 2.5rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.row-showtimes .sub-header .city select{
+    border: #eaedf8;
+    border-radius: 5px;
+    background-color: #eaedf8;
+    padding: 3px 5px;
+    width: 15rem;
+    height: 2.5rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.row-showtimes .cinema{
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    justify-content: space-between;
+    
+}
+
+.row-showtimes .cinema .card-cinema-1{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    order: 1;
+    margin-bottom: 2rem;
+}
+
+.row-showtimes .cinema .card-cinema-1 .header{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    order: 1;
+    margin: 2rem 2rem 1rem 2rem;
+}
+
+.row-showtimes .cinema .card-cinema-1 .header p{
+    font-size: 0.8rem;
+    color: #6E7191;
+}
+
+/* .jumbotron-line{
+    display: flex;
+    order: 2;
+    background-color: #6E7191;
+    opacity: 0.3;
+    margin-top: 2rem; 
+} */
+
+.row-showtimes .cinema .card-cinema-1 .time-option{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    order: 3;
+    padding: 1rem 1rem 0 1rem;
+    justify-content: space-between;
+    line-height: 1;
+}
+
+.row-showtimes .cinema .card-cinema-1 .price{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    order: 4;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.row-showtimes .cinema .card-cinema-1 .book{
+    display: flex;
+    flex: 1;
+    order: 5;
+    margin: 1rem;
+}
+
+.row-showtimes .cinema .card-cinema-1 .btn-book{
+    width: 100%;
+    height: 2rem;
+    background-color: #5F2EEA;
+    border: 1px solid #5F2EEA;
+    color: #fff;
+    cursor: pointer;
+}
+
+.row-showtimes .cinema .card-cinema-1 .btn-book:hover{
+    background-color: #fff;
+    color: #5F2EEA;
+}
+
+.row-showtimes .cinema .card-cinema-2{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    order: 2;
+    margin-bottom: 2rem;
+}
+
+.row-showtimes .cinema .card-cinema-2 .header{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    order: 1;
+    margin: 2rem 2rem 1rem 2rem;
+}
+
+.row-showtimes .cinema .card-cinema-2 .header p{
+    font-size: 0.8rem;
+    color: #6E7191;
+}
+
+hr{
+   display: flex;
+    order: 2;
+    background-color: #6E7191;
+    opacity: 0.3; 
+}
+
+.row-showtimes .cinema .card-cinema-2 .time-option{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    order: 3;
+    padding: 1rem 1rem 0 1rem;
+    justify-content: space-between;
+    line-height: 1;
+}
+
+.row-showtimes .cinema .card-cinema-2 .price{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    order: 4;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.row-showtimes .cinema .card-cinema-2 .book{
+    display: flex;
+    flex: 1;
+    order: 5;
+    margin: 1rem;
+}
+
+.row-showtimes .cinema .card-cinema-2 .btn-book{
+    width: 100%;
+    height: 2rem;
+    background-color: #5F2EEA;
+    border: 1px solid #5F2EEA;
+    color: #fff;
+    cursor: pointer;
+}
+
+.row-showtimes .cinema .card-cinema-2 .btn-book:hover{
+    background-color: #fff;
+    color: #5F2EEA;
+}
+
+.row-showtimes .cinema .card-cinema-3{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    order: 1;
+    margin-bottom: 2rem;
+}
+
+.row-showtimes .cinema .card-cinema-3 .header{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    order: 1;
+    margin: 2rem 2rem 1rem 2rem;
+}
+
+.row-showtimes .cinema .card-cinema-3 .header p{
+    font-size: 0.8rem;
+    color: #6E7191;
+}
+
+hr{
+   display: flex;
+    order: 2;
+    background-color: #6E7191;
+    opacity: 0.3; 
+}
+
+.row-showtimes .cinema .card-cinema-3 .time-option{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    order: 3;
+    padding: 1rem 1rem 0 1rem;
+    justify-content: space-between;
+    line-height: 1;
+}
+
+.row-showtimes .cinema .card-cinema-3 .price{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    order: 4;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.row-showtimes .cinema .card-cinema-3 .book{
+    display: flex;
+    flex: 1;
+    order: 5;
+    margin: 1rem;
+}
+
+.row-showtimes .cinema .card-cinema-3 .btn-book{
+    width: 100%;
+    height: 2rem;
+    background-color: #5F2EEA;
+    border: 1px solid #5F2EEA;
+    color: #fff;
+    cursor: pointer;
+}
+
+.row-showtimes .cinema .card-cinema-3 .btn-book:hover{
+    background-color: #fff;
+    color: #5F2EEA;
+}
+
+.row-showtimes .cinema .card-cinema-4{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    order: 4;
+}
+
+.row-showtimes .cinema .card-cinema-4 .header{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    order: 1;
+    margin: 2rem 2rem 1rem 2rem;
+}
+
+.row-showtimes .cinema .card-cinema-4 .header p{
+    font-size: 0.8rem;
+    color: #6E7191;
+}
+
+hr{
+   display: flex;
+    order: 2;
+    background-color: #6E7191;
+    opacity: 0.3; 
+}
+
+.row-showtimes .cinema .card-cinema-4 .time-option{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    order: 3;
+    padding: 1rem 1rem 0 1rem;
+    justify-content: space-between;
+    line-height: 1;
+}
+
+.row-showtimes .cinema .card-cinema-4 .price{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    order: 4;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.row-showtimes .cinema .card-cinema-4 .book{
+    display: flex;
+    flex: 1;
+    order: 5;
+    margin: 1rem;
+}
+
+.row-showtimes .cinema .card-cinema-4 .btn-book{
+    width: 100%;
+    height: 2rem;
+    background-color: #5F2EEA;
+    border: 1px solid #5F2EEA;
+    color: #fff;
+    cursor: pointer;
+}
+
+.row-showtimes .cinema .card-cinema-4 .btn-book:hover{
+    background-color: #fff;
+    color: #5F2EEA;
+}
+
+.row-showtimes .cinema .card-cinema-5{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    order: 2;
+}
+
+.row-showtimes .cinema .card-cinema-5 .header{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    order: 1;
+    margin: 2rem 2rem 1rem 2rem;
+}
+
+.row-showtimes .cinema .card-cinema-5 .header p{
+    font-size: 0.8rem;
+    color: #6E7191;
+}
+
+hr{
+   display: flex;
+    order: 2;
+    background-color: #6E7191;
+    opacity: 0.3; 
+}
+
+.row-showtimes .cinema .card-cinema-5 .time-option{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    order: 3;
+    padding: 1rem 1rem 0 1rem;
+    justify-content: space-between;
+    line-height: 1;
+}
+
+.row-showtimes .cinema .card-cinema-5 .price{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    order: 4;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.row-showtimes .cinema .card-cinema-5 .book{
+    display: flex;
+    flex: 1;
+    order: 5;
+    margin: 1rem;
+}
+
+.row-showtimes .cinema .card-cinema-5 .btn-book{
+    width: 100%;
+    height: 2rem;
+    background-color: #5F2EEA;
+    border: 1px solid #5F2EEA;
+    color: #fff;
+    cursor: pointer;
+}
+
+.row-showtimes .cinema .card-cinema-5 .btn-book:hover{
+    background-color: #fff;
+    color: #5F2EEA;
+}
+
+.row-showtimes .cinema .card-cinema-6{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    order: 2;
+}
+
+.row-showtimes .cinema .card-cinema-6 .header{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    order: 1;
+    margin: 2rem 2rem 1rem 2rem;
+}
+
+.row-showtimes .cinema .card-cinema-6 .header p{
+    font-size: 0.8rem;
+    color: #6E7191;
+}
+
+hr{
+   display: flex;
+    order: 2;
+    background-color: #6E7191;
+    opacity: 0.3; 
+}
+
+.row-showtimes .cinema .card-cinema-6 .time-option{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    order: 3;
+    padding: 1rem 1rem 0 1rem;
+    justify-content: space-between;
+    line-height: 1;
+}
+
+.row-showtimes .cinema .card-cinema-6 .price{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    order: 4;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.row-showtimes .cinema .card-cinema-6 .book{
+    display: flex;
+    flex: 1;
+    order: 5;
+    margin: 1rem;
+}
+
+.row-showtimes .cinema .card-cinema-6 .btn-book{
+    width: 100%;
+    height: 2rem;
+    background-color: #5F2EEA;
+    border: 1px solid #5F2EEA;
+    color: #fff;
+    cursor: pointer;
+}
+
+.row-showtimes .cinema .card-cinema-6 .btn-book:hover{
+    background-color: #fff;
+    color: #5F2EEA;
+}

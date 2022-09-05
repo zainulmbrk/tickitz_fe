@@ -1,0 +1,112 @@
+
+.row-login{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    font-family: 'Roboto', sans-serif;
+}
+
+.left-side{
+    background-image: linear-gradient(rgba(43, 21, 107, 0.5), rgba(43, 21, 107, 0.8)),url('../../../../public/bg-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left-content{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.left-content p{
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 0.5rem;
+}
+
+.right-side{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.right-content{
+    padding: 0 3rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+
+label{
+    font-size: 0.9rem;
+}
+
+.right-content .title{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.right-content .tagline{
+    font-size: 0.9rem;
+    color: #A0A3BD;
+}
+
+.right-content .email-login input{
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 1rem;
+    border: 1px solid #5F2EEA;
+    outline: none;
+    border-radius: 10px;
+    height: 3rem;
+    /* color: #A0A3BD; */
+}
+
+.right-content .password-login input{
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 1rem;
+    border: 1px solid #5F2EEA;
+    outline: none;
+    border-radius: 10px;
+    height: 3rem;
+    /* color: #A0A3BD; */
+}
+
+.button-login{
+    width: 100%;
+    height: 3rem;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: #5F2EEA;
+    border: none;
+    color: #fff;
+}
+
+.button-login:hover{
+    background-color: #fff;
+    color: #5F2EEA;
+    border: 1px solid #5F2EEA;
+    transition: 0.3s ease-in-out;
+}
+
+.submit-login p{
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+@media only screen and  (max-width: 600px){
+    .left-side{
+        display: none;
+    }
+}

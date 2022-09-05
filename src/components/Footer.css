@@ -1,0 +1,222 @@
+
+/* FOOTER */
+.row-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;   
+    font-family: 'Roboto', sans-serif;
+
+  }
+  
+  .bottom-bar{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .row-footer .footer-logo{
+    line-height: 1.65;
+    color: #6E7191;
+  }
+
+  .row-footer .footer-logo .tagline{
+    font-size: 0.9rem;
+    color: #6E7191;
+  }
+  
+  .row-footer .footer-page{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row-footer .footer-page .title{
+    margin-bottom: 1rem;
+  }
+  
+  .row-footer .footer-page .title p{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .row-footer .footer-page .link{
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+  }
+  
+  .row-footer .footer-sponsor{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row-footer .footer-sponsor .title{
+    margin-bottom: 1rem;
+  }
+  
+  .row-footer .footer-sponsor .title p{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .row-footer .footer-sponsor .sponsor-list{
+    display: flex;
+    flex-direction: column;
+    line-height: 3rem;
+  }
+  
+  .row-footer .footer-social-media{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.65;
+  }
+  
+  .row-footer .footer-social-media .title{
+    margin-bottom: 1rem;
+  }
+  
+  .row-footer .footer-social-media .title p{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .row-footer .footer-social-media .card-social-media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1.5rem;
+  }
+  
+  .row-footer .footer-social-media .card-social-media .social-media-list{
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    justify-content: flex-start;
+    
+  }
+  
+  .row-footer .footer-social-media .card-social-media .social-media-list a img{
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  .row-footer .footer-social-media .card-social-media .social-media-link{
+
+    line-height: 2rem;
+  }
+  
+  .copyright{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+    color: #6E7191;
+  }
+
+  @media only screen and  (max-width: 600px){
+    .row-footer{
+      margin-top: 3rem;
+    }
+    .bottom-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 1rem;   
+      }
+
+      .row-footer .footer-page{
+        display: flex;
+      }
+      
+      .row-footer .footer-page .link{
+        display: flex;
+        flex-direction: row;
+        column-gap: 1rem;
+        margin-top: -1.5rem;
+      }
+
+      .row-footer .footer-sponsor{
+        display: flex;
+        margin-top: 2rem;
+      }
+
+      .row-footer .footer-sponsor .sponsor-list{
+        display: flex;
+        flex-direction: row;
+        column-gap: 1.5rem;
+        margin-top: -1.5rem;
+      }
+
+      .row-footer .footer-social-media{
+        display: flex;
+        margin-top: 1.5rem;
+      }
+
+      .row-footer .footer-social-media .card-social-media .social-media-list{
+        display: flex;
+        flex-direction: row;
+        column-gap: 2.5rem;
+        margin-top: -1rem;
+      }
+
+      .row-footer .footer-social-media .social-media-link{
+        display: none;
+      }
+
+      .copyright{
+        margin-bottom: 5rem;
+      }
+
+  }
+
+  @media only screen and  (max-width: 468px){
+ 
+    .row-footer .footer-sponsor{
+      display: flex;
+      margin-top: 2rem;
+    }
+
+    .row-footer .footer-sponsor .sponsor-list{
+      display: flex;
+      flex-direction: row;
+      column-gap: 0;
+      margin-top: -1.5rem;
+      align-items: center;
+    }
+
+    .row-footer .footer-sponsor .sponsor-list .ebv img{
+      width: 70%;
+    }
+
+    .row-footer .footer-sponsor .sponsor-list .cineone img{
+      width: 70%;
+    }
+
+    .row-footer .footer-sponsor .sponsor-list .hiflix img{
+      width: 70%;
+    }
+  }
+
+  @media only screen and  (max-width: 350px){
+ 
+    .row-footer .footer-sponsor{
+      display: flex;
+      margin-top: 2rem;
+    }
+
+    .row-footer .footer-sponsor .sponsor-list{
+      display: flex;
+      flex-direction: row;
+      column-gap: 0;
+      margin-top: -1.5rem;
+      align-items: center;
+    }
+
+    .row-footer .footer-sponsor .sponsor-list .ebv img{
+      width: 70%;
+    }
+
+    .row-footer .footer-sponsor .sponsor-list .cineone img{
+      width: 70%;
+    }
+
+    .row-footer .footer-sponsor .sponsor-list .hiflix img{
+      width: 70%;
+    }
+  }
