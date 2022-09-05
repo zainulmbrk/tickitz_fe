@@ -152,17 +152,6 @@ const Navbar = () => {
                 ) : (
                   <>
                     <div style={{ display: 'flex', columnGap: '1rem' }}>
-                      {/* <Link
-                        className="signup-menu"
-                        to={'/signup'}
-                        style={{
-                          textDecoration: 'none',
-                          fontWeight: '500',
-                          color: '#000',
-                        }}
-                      >
-                        <a>Sign Up</a>
-                      </Link> */}
                       <Link
                         to={'/login'}
                         className="signin-menu"

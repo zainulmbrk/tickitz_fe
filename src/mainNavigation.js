@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Home, Movies, MovieDetails } from './Pages'
 import Auth from './Pages/Auth'
 import AuthSignup from './Pages/AuthSignup'
-import PrivateRoute from './route/PrivateRoute'
+// import PrivateRoute from './route/PrivateRoute'
 import PublicRoute from './route/PublicRoute'
 
 const MainNavigation = () => {

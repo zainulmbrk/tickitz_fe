@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="row">
             <div className="bottom-bar">
               <div className="footer-logo">
-                <img src="/logoTickitz.svg" />
+                <img src="/logoTickitz.svg" alt="logo" />
                 <p className="tagline">
                   Stop waiting in line. Buy tickets <br />
                   conveniently, watch movies quietly
@@ -39,17 +39,17 @@ const Footer = () => {
                 <div className="sponsor-list">
                   <div className="ebv">
                     <Link to="#">
-                      <img src="/ebv.svg" />
+                      <img src="/ebv.svg" alt="cinema" />
                     </Link>
                   </div>
                   <div className="cineone">
                     <Link to="#">
-                      <img src="/cineone21.svg" />
+                      <img src="/cineone21.svg" alt="cinema" />
                     </Link>
                   </div>
                   <div className="hiflix">
                     <Link to="#">
-                      <img src="/hiflix.svg" />
+                      <img src="/hiflix.svg" alt="cinema" />
                     </Link>
                   </div>
                 </div>
@@ -62,22 +62,22 @@ const Footer = () => {
                   <div className="social-media-list">
                     <div className="facebook">
                       <Link to="#">
-                        <img src="/facebook.png" />
+                        <img src="/facebook.png" alt="socialmedia" />
                       </Link>
                     </div>
                     <div className="instagram">
                       <Link to="#">
-                        <img src="/instagram.png" />
+                        <img src="/instagram.png" alt="socialmedia" />
                       </Link>
                     </div>
                     <div className="twitter">
                       <Link to="#">
-                        <img src="/twitter.png" />
+                        <img src="/twitter.png" alt="socialmedia" />
                       </Link>
                     </div>
                     <div className="youtube">
                       <Link to="#">
-                        <img src="/youtube.png" />
+                        <img src="/youtube.png" alt="socialmedia" />
                       </Link>
                     </div>
                   </div>

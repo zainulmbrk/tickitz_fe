@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { GetMovieShowing } from '../../../redux/actions/Movies'
 import { Link } from 'react-router-dom'
@@ -15,7 +15,7 @@ const Movieshowing = () => {
 
   useEffect(() => {
     dispatch(GetMovieShowing())
-  }, [])
+  }, [dispatch])
 
   const config = {
     dots: false,
