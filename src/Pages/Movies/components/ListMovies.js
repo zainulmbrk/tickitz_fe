@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { Route, Link, Routes, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './ListMovies.css'
 import { FaSort } from 'react-icons/fa'
 const Loading = () => {
@@ -12,10 +12,6 @@ const ListMovies = () => {
   const [sortMovies, setSortMovies] = useState({ sortby: 'title' })
   console.log(sortMovies)
   useEffect(() => {
-    // const { title = '', sortby = '' } = sortMovies
-    // setListMovies((prevState) => ({
-    //   ...prevState,
-    // }))
     axios({
       method: 'GET',
       url: `http://localhost:9511/api/v5/movies/?title=${query}&sortby=${sortMovies.sortby}`,

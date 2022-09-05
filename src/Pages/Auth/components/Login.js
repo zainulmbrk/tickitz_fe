@@ -1,15 +1,11 @@
-// import axios from "axios";
 import React, { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { AuthLogin } from '../../../redux/actions/Auth'
-// import Home from "../../Home";
 import './Login.css'
-// import background from "./public/bg-image.png";
 
-const Login = ({ props }) => {
-  // const [userLogin, setUserLogin] = useState(JSON.parse(localStorage.getItem('userLogin'))??{})
-  const { data, error, loading, isLogin } = useSelector((state) => state.auth)
+const Login = () => {
+  const { error, loading, isLogin } = useSelector((state) => state.auth)
   const dispatch = useDispatch()
   const navigation = useNavigate()
   const [formLogin, setFormLogin] = useState({
@@ -28,7 +24,7 @@ const Login = ({ props }) => {
     } else {
       navigation('/login', { replace: true })
     }
-  }, [])
+  }, [isLogin, navigation])
 
   return (
     <>
@@ -41,9 +37,6 @@ const Login = ({ props }) => {
         </div>
         <div className="col-md-5 right-side">
           <div className="right-content">
-            {/* <div className="logo-mobile">
-              <img src="logo.svg" alt="logo" />
-            </div> */}
             <p className="title">Sign In</p>
             <p className="tagline">
               Sign in with your data that you entered during <br />
@@ -79,7 +72,6 @@ const Login = ({ props }) => {
                 />
               </div>
               <div className="submit-login">
-                {/* <button className="button btn-signup" onClick={()=> handleLogin()}>Sign In</button> */}
                 {loading ? (
                   <button className="button-login" disabled={true}>
                     Loading..

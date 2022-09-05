@@ -9,9 +9,7 @@ const Movies = () => {
   return (
     <>
       <Navbar />
-      {/* <MovieDetails/>
-    <Showtimes/> */}
-      {/* <AddMovies /> */}
+
       <ListMovies />
       <Footer />
     </>

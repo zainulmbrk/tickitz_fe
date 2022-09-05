@@ -2,13 +2,13 @@ import React from 'react'
 // import { Link } from "react-router-dom";
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link, useNavigate, useSearchParams } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { AuthLogout } from '../redux/actions/Auth'
 import './Navbar.css'
 import { FiMenu } from 'react-icons/fi'
 // import profile from '../../public/robert.png'
 const Navbar = () => {
-  const [query, setQuery] = useState('')
+  // const [query, setQuery] = useState('')
   const navigate = useNavigate()
   const dispatch = useDispatch()
   const { isLogin } = useSelector((state) => state.auth)
@@ -16,7 +16,7 @@ const Navbar = () => {
     if (isLogin === false) {
       navigate('/', { replace: true })
     }
-  }, [isLogin])
+  }, [isLogin, navigate])
 
   //toggle
   const [open, setOpen] = useState(false)
@@ -58,7 +58,7 @@ const Navbar = () => {
                           className="dropdown-toggle"
                           type="button"
                           data-bs-toggle="dropdown"
-                          aria-expanded="false"
+                          alt="profile"
                         />
 
                         <ul className="dropdown-menu dropdown-menu-end">
@@ -172,9 +172,7 @@ const Navbar = () => {
                           color: '#000',
                         }}
                       >
-                        <button className="btnSignin">
-                          <a>Sign In</a>
-                        </button>
+                        <button className="btnSignin">Sign In</button>
                       </Link>
                     </div>
                     <div className="rightMenu">

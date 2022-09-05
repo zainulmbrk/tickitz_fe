@@ -1,5 +1,5 @@
-import axios from 'axios'
-import React, { useState, useEffect } from 'react'
+// import axios from 'axios'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './Upcomingmovies.css'
 import { useDispatch, useSelector } from 'react-redux'
@@ -10,23 +10,14 @@ const Loading = () => {
 }
 
 const Upcomingmovies = () => {
-  // const [upcoming, setUpcoming] = useState([])
-  // useEffect(() => {
-  //   axios({
-  //     method: 'GET',
-  //     url: 'http://localhost:9511/api/v5/movies',
-  //   }).then((res) => {
-  //     setUpcoming(res.data.data)
-  //   })
-  // }, [])
   const dispatch = useDispatch()
 
   useEffect(() => {
     dispatch(GetMovies())
-  }, [])
+  }, [dispatch])
 
   const { data } = useSelector((state) => state.fetch)
-  console.log(data, 'ini')
+
   return (
     <>
       <div className="container">

@@ -1,15 +1,13 @@
-import axios from 'axios'
+// import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux/es/exports'
 import { AuthRegister } from '../../../redux/actions/Register'
 import './Signup.css'
 
-const Signup = ({ props }) => {
+const Signup = () => {
   // const [userSignup, setUserSignup] = useState(JSON.parse(localStorage.getItem('userSignup'))??{})
-  const { data, error, loading, isRegister } = useSelector(
-    (state) => state.register,
-  )
+  const { error, loading, isRegister } = useSelector((state) => state.register)
   const dispatch = useDispatch()
   const navigation = useNavigate()
   const [formRegister, setFormRegister] = useState({
@@ -24,28 +22,6 @@ const Signup = ({ props }) => {
     event.preventDefault()
     dispatch(AuthRegister(formRegister))
     console.log(error, 'sdfghj')
-    // try{
-    //   const result = await axios({
-    //     method:'POST',
-    //     data: addData,
-    //     url: 'http://localhost:9511/api/v5/auth/register'
-    //   })
-    //   console.log(result.data.data.token)
-    //   localStorage.setItem('usersignup', JSON.stringify({
-    //     isRegister: true,
-    //     data: result.data.data
-    //   }))
-    //   setUserSignup((prevData)=> ({
-    //     ...prevData,
-    //     isRegister: true,
-    //     data: result.data.data,
-    //   }))
-    //   alert("Has been registered")
-    //   navigation("/login", { replace: true });
-    // }catch (error){
-    //   console.log(error)
-    //   alert("Email Already in Use")
-    // }
   }
 
   useEffect(() => {
@@ -55,7 +31,7 @@ const Signup = ({ props }) => {
       // alert("Email Already in Use")
       navigation('/signup', { replace: true })
     }
-  }, [isRegister])
+  }, [isRegister, navigation])
 
   return (
     <>

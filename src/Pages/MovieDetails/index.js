@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
-import { Link, useParams, useLocation } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import './MovieDetails.css'
 import axios from 'axios'
 import moment from 'moment'
 const MovieDetails = () => {
-  const { movies_id: movies_id } = useParams()
+  const { movies_id } = useParams()
   const [details, setDetails] = useState([])
-  // const [searchParams, setSearchParams] = useSearchParams()
 
   useEffect(() => {
     axios({
@@ -21,7 +20,7 @@ const MovieDetails = () => {
       .catch((err) => {
         console.log(err)
       })
-  }, [details])
+  }, [details, movies_id])
   return (
     <>
       <Navbar />
@@ -35,6 +34,7 @@ const MovieDetails = () => {
                     <div className="cover" key={index}>
                       <img
                         src={`http://localhost:9511/uploads/${item.cover}`}
+                        alt="cover"
                       />
                     </div>
                   </div>

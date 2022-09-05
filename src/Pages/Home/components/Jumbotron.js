@@ -12,13 +12,13 @@ const Jumbotron = () => {
             </div>
             <div className="card-right-jumbotron">
               <div className="images-one">
-                <img src="spiderman.svg" />
+                <img src="spiderman.svg" alt="spiderman" />
               </div>
               <div className="images-two">
-                <img src="lionking.svg" />
+                <img src="lionking.svg" alt="lionking" />
               </div>
               <div className="images-three">
-                <img src="blackwidow.svg" />
+                <img src="blackwidow.svg" alt="blackwidow" />
               </div>
             </div>
           </div>
