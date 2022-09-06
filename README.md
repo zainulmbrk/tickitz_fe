@@ -34,11 +34,9 @@ Tickitz backend made with express.js, node.js, and mysql
 ## Screenshots
  | Page | Web | Mobile | 
  | ------- | ---- | ------ |
- |Sign Up|<a href="https://drive.google.com/uc?export=view&id=1qpqKkr6bGtGCx8EfRNx62Jic3rwEE5fU"><img src="https://drive.google.com/uc?export=view&id=1qpqKkr6bGtGCx8EfRNx62Jic3rwEE5fU" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" />|<a href="https://drive.google.com/uc?export=view&id=1gv5qbcVULWRLuD3JtxAP4lYef8GUcRx-"><img src="https://drive.google.com/uc?export=view&id=1gv5qbcVULWRLuD3JtxAP4lYef8GUcRx-" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" />|
- |Sign In||<a href="https://drive.google.com/uc?export=view&id=1XHBlgkZMFHvX8y0j8nbC5CgdJw8qKsRT"><img src="https://drive.google.com/uc?export=view&id=1XHBlgkZMFHvX8y0j8nbC5CgdJw8qKsRT" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" />|<a href="https://drive.google.com/uc?export=view&id=15d4FuVl30s3W5IFUUDNlPAi2sHpVnP1b"><img src="https://drive.google.com/uc?export=view&id=15d4FuVl30s3W5IFUUDNlPAi2sHpVnP1b" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" />|
+ |Sign Up|<a href="https://drive.google.com/uc?export=view&id=1qpqKkr6bGtGCx8EfRNx62Jic3rwEE5fU"><img src="https://drive.google.com/uc?export=view&id=1qpqKkr6bGtGCx8EfRNx62Jic3rwEE5fU" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" />|<a href="https://drive.google.com/uc?export=view&id=1gv5qbcVULWRLuD3JtxAP4lYef8GUcRx-"><img src="https://drive.google.com/uc?export=view&id=1gv5qbcVULWRLuD3JtxAP4lYef8GUcRx-" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+ |Sign In|<a href="https://drive.google.com/uc?export=view&id=1XHBlgkZMFHvX8y0j8nbC5CgdJw8qKsRT"><img src="https://drive.google.com/uc?export=view&id=1XHBlgkZMFHvX8y0j8nbC5CgdJw8qKsRT" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" />|<a href="https://drive.google.com/uc?export=view&id=15d4FuVl30s3W5IFUUDNlPAi2sHpVnP1b"><img src="https://drive.google.com/uc?export=view&id=15d4FuVl30s3W5IFUUDNlPAi2sHpVnP1b" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
-
-    
 
 ### Author
 [Muhammad Zainul Mubarok](https://github.com/zainulmbrk)
