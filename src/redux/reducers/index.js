@@ -1,6 +1,5 @@
 import { combineReducers } from 'redux'
 import { Fetch, FetchSort, FetchMovieShowing } from '../reducers/Movies'
-
 import Auth from '../reducers/Auth'
 import Register from '../reducers/Register'
 import PostMovies from '../reducers/PostMovies'

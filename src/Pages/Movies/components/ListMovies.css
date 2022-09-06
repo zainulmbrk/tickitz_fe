@@ -138,6 +138,11 @@
     background-color: #5F2EEA;
     color: #fff;
 }
+
+.page-item-link:focus{
+    background-color: #5F2EEA;
+    color: #fff;
+}
  
   @media only screen and  (max-width: 600px){
 

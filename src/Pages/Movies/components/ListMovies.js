@@ -1,20 +1,52 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import './ListMovies.css'
 import { FaSort } from 'react-icons/fa'
+import { GetMovies } from '../../../redux/actions/Movies'
+import { useDispatch, useSelector } from 'react-redux'
+
 const Loading = () => {
   return <div>Loading .....</div>
 }
 const ListMovies = () => {
-  const [listMovies, setListMovies] = useState({ data: {} })
+  const [listMovies, setListMovies] = useState({
+    data: {
+      results: [],
+      totalPage: 0,
+      totalRow: 0,
+    },
+  })
   const [query, setQuery] = useState('')
   const [sortMovies, setSortMovies] = useState({ sortby: 'title' })
-  console.log(sortMovies)
+
+  //pagination
+  // const dispatch = useDispatch()
+  const [params, setParams] = useSearchParams()
+  const [paginate, setPaginate] = useState({
+    page: params.get('page') ?? 1,
+    limit: 8,
+  })
+  // useEffect(() => {
+  //   dispatch(GetMovies(paginate))
+  // }, [paginate])
+  // const { data } = useSelector((state) => state.movies)
+  let totalPage = Array(listMovies.totalPage).fill() ?? []
+
+  const handlePaginate = (page) => {
+    setPaginate((prevState) => ({ ...prevState, page }))
+    params.set('page', page)
+    setParams(params)
+  }
+
   useEffect(() => {
     axios({
       method: 'GET',
-      url: `http://localhost:9511/api/v5/movies/?title=${query}&sortby=${sortMovies.sortby}`,
+      url: `http://localhost:9511/api/v5/movies/${
+        paginate.page ? `?page=${paginate.page}` : ``
+      }${
+        paginate.limit ? `&limit=${paginate.limit}` : ``
+      }&title=${query}&sortby=${sortMovies.sortby}`,
     })
       .then((res) => {
         setListMovies(res.data.data)
@@ -22,7 +54,7 @@ const ListMovies = () => {
       .catch((err) => {
         console.log(err)
       })
-  }, [sortMovies, query])
+  }, [sortMovies, query, paginate])
 
   return (
     <>
@@ -143,6 +175,44 @@ const ListMovies = () => {
                 ))
               )}
             </div>
+
+            <nav aria-label="Page navigation example">
+              <ul className="pagination justify-content-center mt-5 gap-2">
+                {totalPage.map((item, index) => {
+                  return (
+                    <>
+                      <li className="page-item page-item-link">
+                        <a
+                          className={` page-link ${
+                            paginate.page === index + 1
+                          }`}
+                          onClick={() => handlePaginate(index + 1)}
+                        >
+                          {index + 1}
+                        </a>
+                      </li>
+                    </>
+                  )
+                })}
+              </ul>
+            </nav>
+            {/* {totalPage.map((item, index) => {
+                return (
+                  <>
+                    <button
+                      className={` ${
+                        paginate.page === index + 1
+                          ? `btn-active`
+                          : `btn-inactive`
+                      }`}
+                      onClick={() => handlePaginate(index + 1)}
+                    >
+                      {index + 1}
+                    </button>
+                    
+                  </>
+                )
+              })} */}
           </div>
         </div>
       </div>
