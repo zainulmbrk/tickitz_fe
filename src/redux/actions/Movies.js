@@ -89,7 +89,7 @@ export const GetMovies = () => {
     dispatch(GetMoviesRequest())
     axios({
       method: 'GET',
-      url: `http://localhost:9511/api/v5/movies`,
+      url: `${process.env.URL_API}/movies`,
     })
       .then((res) => {
         dispatch(GetMoviesSuccess(res.data.data))

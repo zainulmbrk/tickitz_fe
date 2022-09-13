@@ -12,7 +12,7 @@ const MovieDetails = () => {
   useEffect(() => {
     axios({
       method: 'GET',
-      url: `http://localhost:9511/api/v5/movies/${movies_id}`,
+      url: `${process.env.URL_API}/movies`,
     })
       .then((res) => {
         setDetails(res.data.data)
@@ -33,7 +33,7 @@ const MovieDetails = () => {
                   <div className="card-left">
                     <div className="cover" key={index}>
                       <img
-                        src={`http://localhost:9511/uploads/${item.cover}`}
+                        src={`${process.env.URL_API_IMAGES}/${movies.cover}`}
                         alt="cover"
                       />
                     </div>

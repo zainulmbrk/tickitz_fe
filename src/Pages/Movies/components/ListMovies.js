@@ -42,7 +42,7 @@ const ListMovies = () => {
   useEffect(() => {
     axios({
       method: 'GET',
-      url: `http://localhost:9511/api/v5/movies/${
+      url: `${process.env.URL_API}/movies/${
         paginate.page ? `?page=${paginate.page}` : ``
       }${
         paginate.limit ? `&limit=${paginate.limit}` : ``
@@ -151,7 +151,7 @@ const ListMovies = () => {
                 listMovies?.results?.map((movies, index) => (
                   <div className="cover" key={index}>
                     <img
-                      src={`http://localhost:9511/uploads/${movies.cover}`}
+                      src={`${process.env.URL_API_IMAGES}/${movies.cover}`}
                       alt={movies.title}
                       title={movies.title}
                     />

@@ -75,7 +75,7 @@ const Movieshowing = () => {
                 return (
                   <div className="cover" key={index}>
                     <img
-                      src={`http://localhost:9511/uploads/${movies.cover}`}
+                      src={`${process.env.URL_API_IMAGES}/${movies.cover}`}
                       alt={movies.title}
                       title={movies.title}
                     />
