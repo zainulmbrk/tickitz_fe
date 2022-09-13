@@ -12,7 +12,7 @@ const MovieDetails = () => {
   useEffect(() => {
     axios({
       method: 'GET',
-      url: `https://tickitzz.herokuapp.com/api/v5/movies`,
+      url: `https://tickitzz.herokuapp.com/api/v5/movies/${movies_id}`,
     })
       .then((res) => {
         setDetails(res.data.data)
