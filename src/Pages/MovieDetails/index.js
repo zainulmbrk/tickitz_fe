@@ -33,7 +33,7 @@ const MovieDetails = () => {
                   <div className="card-left">
                     <div className="cover" key={index}>
                       <img
-                        src={`${process.env.URL_API_IMAGES}/${movies.cover}`}
+                        src={`${process.env.URL_API_IMAGES}/${item.cover}`}
                         alt="cover"
                       />
                     </div>
