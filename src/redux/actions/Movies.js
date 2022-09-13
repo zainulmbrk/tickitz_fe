@@ -89,7 +89,7 @@ export const GetMovies = () => {
     dispatch(GetMoviesRequest())
     axios({
       method: 'GET',
-      url: `${process.env.URL_API}/movies`,
+      url: `https://tickitzz.herokuapp.com/api/v5/movies`,
     })
       .then((res) => {
         dispatch(GetMoviesSuccess(res.data.data))

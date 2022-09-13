@@ -12,7 +12,7 @@ const MovieDetails = () => {
   useEffect(() => {
     axios({
       method: 'GET',
-      url: `${process.env.URL_API}/movies`,
+      url: `https://tickitzz.herokuapp.com/api/v5/movies`,
     })
       .then((res) => {
         setDetails(res.data.data)
@@ -33,7 +33,7 @@ const MovieDetails = () => {
                   <div className="card-left">
                     <div className="cover" key={index}>
                       <img
-                        src={`${process.env.URL_API_IMAGES}/${item.cover}`}
+                        src={`https://tickitzz.herokuapp.com/uploads/${item.cover}`}
                         alt="cover"
                       />
                     </div>

@@ -42,7 +42,7 @@ const ListMovies = () => {
   useEffect(() => {
     axios({
       method: 'GET',
-      url: `${process.env.URL_API}/movies/${
+      url: `https://tickitzz.herokuapp.com/api/v5/movies/${
         paginate.page ? `?page=${paginate.page}` : ``
       }${
         paginate.limit ? `&limit=${paginate.limit}` : ``
@@ -151,7 +151,7 @@ const ListMovies = () => {
                 listMovies?.results?.map((movies, index) => (
                   <div className="cover" key={index}>
                     <img
-                      src={`${process.env.URL_API_IMAGES}/${movies.cover}`}
+                      src={`https://tickitzz.herokuapp.com/uploads/${movies.cover}`}
                       alt={movies.title}
                       title={movies.title}
                     />

@@ -26,7 +26,7 @@ export const AuthRegister = (formData) => {
     dispatch(RegisterRequest())
     axios({
       method: 'POST',
-      url: `${process.env.URL_API}/auth/register`,
+      url: `https://tickitzz.herokuapp.com/api/v5/auth/register`,
       data: {
         firstname: formData.firstname,
         lastname: formData.lastname,

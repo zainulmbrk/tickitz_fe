@@ -75,7 +75,7 @@ const Movieshowing = () => {
                 return (
                   <div className="cover" key={index}>
                     <img
-                      src={`${process.env.URL_API_IMAGES}/${movies.cover}`}
+                      src={`https://tickitzz.herokuapp.com/uploads/${movies.cover}`}
                       alt={movies.title}
                       title={movies.title}
                     />
