@@ -107,7 +107,7 @@ export const GetMovieShowing = () => {
     dispatch(GetMovieShowingRequest())
     axios({
       method: 'GET',
-      url: `http://localhost:9511/api/v5/schedule`,
+      url: `https://tickitzz.herokuapp.com/api/v5/schedule`,
     })
       .then((res) => {
         dispatch(GetMovieShowingSuccess(res.data.data))
@@ -125,7 +125,7 @@ export const GetSortMovies = (sortby) => {
     dispatch(GetSortMoviesRequest())
     axios({
       method: 'GET',
-      url: `http://localhost:9511/api/v5/movies/?sortby=${sortby}`,
+      url: `https://tickitzz.herokuapp.com/api/v5/movies/?sortby=${sortby}`,
     })
       .then((res) => {
         dispatch(GetSortMoviesSuccess(res.data.data))
@@ -142,7 +142,7 @@ export const PostMovies = (formAddData, token) => {
     dispatch(PostMoviesRequest())
     axios({
       method: 'POST',
-      url: 'http://localhost:9511/api/v5/movies',
+      url: 'https://tickitzz.herokuapp.com/api/v5/movies',
       data: formAddData,
       headers: {
         authorization: token,
